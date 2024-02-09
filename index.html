@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tic Tac Toe game</title>
+
+    <link
+      rel="stylesheet prefetch"
+      href="https://getbootstrap.com/2.3.2/assets/css/bootstrap.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div id="tic-tac-toe">
+        <div class="span3">
+          <div class="flex-container">
+            <div class="row-flex">
+              <h1 style="margin-right: 10px">Tic Tac Toe</h1>
+              <button
+                type="button"
+                class="btn btn-primary"
+                style="align-self: center"
+                id="openModal"
+              >
+                ?
+              </button>
+            </div>
+            <div class="winners-container">
+              <div class="input-prepend input-append">
+                <span class="add-on win_text">O won</span
+                ><strong id="o_win" class="win_times add-on">0</strong
+                ><span class="add-on">time(s)</span>
+              </div>
+              <div class="input-prepend input-append">
+                <span class="add-on win_text">X won</span
+                ><strong id="x_win" class="win_times add-on">0</strong
+                ><span class="add-on">time(s)</span>
+              </div>
+            </div>
+          </div>
+          <ul class="buttonContainer" id="game">
+            <!-- <li id="list1" class="btn span1">+</li>
+            <li id="list2" class="btn span1">+</li>
+            <li id="list3" class="btn span1">+</li>
+            <li id="list4" class="btn span1">+</li>
+            <li id="list5" class="btn span1">+</li>
+            <li id="list6" class="btn span1">+</li>
+            <li id="list7" class="btn span1">+</li>
+            <li id="list8" class="btn span1">+</li>
+            <li id="list9" class="btn span1">+</li> -->
+          </ul>
+          <div class="clr">&nbsp;</div>
+          <div>
+            <div class="row">
+              <a href="#" id="reset" class="btn-success btn span3">Restart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div
+      class="modal"
+      id="guideModal"
+      tabindex="-1"
+      aria-hidden="true"
+      style="display: none"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How to Use</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >              
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="closeModal">
+              Close
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
